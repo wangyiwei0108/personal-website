@@ -2,9 +2,12 @@ import React from 'react';
 
 const Navbar = () => {
   return(
-    <div>
-      Navbar
-    </div>
+      <nav className="navbar__container">
+        <p>YW - 21 &copy;</p>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
   )
 }
 

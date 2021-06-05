@@ -1,0 +1,35 @@
+.intro {
+  &__container {
+    position: relative;
+    height: 90vh;
+
+    & img {
+      width: 36rem;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+    }
+  }
+
+  &__text {
+    font-size: 3.2rem;
+    line-height: 0.9;
+    font-weight: 400;
+    width: 80%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-70%);
+    z-index: 50;
+  
+    & span {
+      text-decoration: underline;
+      text-decoration-color: $color-secondary-1;
+      text-underline-offset: -0.4rem;
+      text-decoration-thickness: 1rem;
+    }
+  }
+}
+
