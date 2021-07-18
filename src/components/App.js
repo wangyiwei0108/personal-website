@@ -1,15 +1,15 @@
-import React, {useEffect} from 'react';
-import About from './About';
-import Skill from './Skill';
+import React, { useEffect } from 'react';
 import Contact from './Contact';
 import Footer from './Footer';
 import Intro from './Intro';
 import Navbar from './Navbar';
-import Work from './Work';
+import Project from './Project';
+import AboutSkill from './AboutSkill';
+import Experience from './Experience';
 
 const App = () => {
   
-  // 頁面第一次 render 後，監聽捲軸 event，一啟動便呼叫 listenScrollEvent
+  // 頁面變色 頁面第一次 render 後，監聽捲軸 event，一啟動便呼叫 listenScrollEvent
   useEffect(() => {
     window.addEventListener('scroll', listenScrollEvent)
   }, [])
@@ -17,7 +17,7 @@ const App = () => {
   // listenScrollEvent 將要讓捲軸移動到不同的 section 有不同的背景顏色
   const listenScrollEvent = () => {
     // 所有的顏色、section 各自放入 array
-    const colors = ['', '', '', 'bgcolor__black', 'bgcolor__black', 'bgcolor__black', 'bgcolor__black'];
+    const colors = ['', '', '', '', 'bgcolor__black', 'bgcolor__black', 'bgcolor__black', 'bgcolor__black', 'bgcolor__black'];
     const sections = [...document.getElementsByTagName('section')];
     const scrollFromTop = window.pageYOffset;
 
@@ -30,6 +30,7 @@ const App = () => {
     };
   }
 
+  // cursor 效果
   useEffect(() => {
     const cursorTag = document.querySelector("div.cursors");
     const balls = cursorTag.querySelectorAll("div");
@@ -63,43 +64,43 @@ const App = () => {
   }, [])
 
   return(
-    <div className="app__wrapper">
-      <svg className="smile">
+    <div id="top">
+      <section><Navbar/></section>
+      <svg className="app__smile-icon">
         <use xlinkHref="images/sprite.svg#icon-smile"></use>
       </svg>
       <div className="app__container">
-        <section><Navbar/></section>
         <section><Intro/></section>
-        <section><About/></section>
-        <section><Skill/></section>
-        <section><Work/></section>
-        <section><Contact/></section>
-        <section><Footer/></section>
+        <section><AboutSkill/></section>
+        <section><Project/></section>
+        <section><Experience/></section>
       </div>
-      <a className="btn" href="https://github.com/wangyiwei0108" target="_blank" rel="noreferrer">
+      <section><Contact/></section>
+      <section><Footer/></section>
+      <a className="app__btn" href="https://github.com/wangyiwei0108" target="_blank" rel="noreferrer">
           <svg>
             <use xlinkHref="images/sprite.svg#icon-github"></use>
           </svg>
-        <p>Github</p>
+        <div>Github</div>
       </a>
       <div className="cursors">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div className="cursors__dot cursors__dot--1"></div>
+        <div className="cursors__dot cursors__dot--2"></div>
+        <div className="cursors__dot cursors__dot--3"></div>
+        <div className="cursors__dot cursors__dot--4"></div>
+        <div className="cursors__dot cursors__dot--5"></div>
+        <div className="cursors__dot cursors__dot--6"></div>
+        <div className="cursors__dot cursors__dot--7"></div>
+        <div className="cursors__dot cursors__dot--8"></div>
+        <div className="cursors__dot cursors__dot--9"></div>
+        <div className="cursors__dot cursors__dot--10"></div>
+        <div className="cursors__dot cursors__dot--11"></div>
+        <div className="cursors__dot cursors__dot--12"></div>
+        <div className="cursors__dot cursors__dot--13"></div>
+        <div className="cursors__dot cursors__dot--14"></div>
+        <div className="cursors__dot cursors__dot--15"></div>
+        <div className="cursors__dot cursors__dot--16"></div>
+        <div className="cursors__dot cursors__dot--17"></div>
       </div>
     </div>
   )

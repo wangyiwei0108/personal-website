@@ -1,0 +1,94 @@
+.app {
+  &__smile-icon {
+    position: absolute;
+    left: 2vw;
+    top: 85vh;
+    width: 4.2vw;
+    height: 4.2vw;
+    fill: $color-primary-1;
+    animation: spin 6s linear infinite;
+
+    @include respond(-large) {
+      width: 4.3vw;
+      height: 4.3vw;
+    }
+
+    @include respond(-medium) {
+      width: 5vw;
+      height: 5vw;
+    }
+
+    @include respond(-small) {
+      width: 6vw;
+      height: 6vw;
+      top: 87vh;
+      left: 4vw;
+    }
+
+    @include respond(-smallest) {
+      display: none;
+    }
+
+    @keyframes spin {
+      100%{
+        transform:rotate(360deg);
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 11vw;
+
+    @include respond(-large) {
+      margin: 0 8vw;
+    }
+
+    @include respond(-small) {
+      margin: 0 5vw;
+    }
+  }
+
+  &__btn {
+    position: fixed;
+    right: 0;
+    top: 40vh;
+    width: 3.1vw;
+    height: 10.3vw;
+    background-color: $color-primary-1;
+    color: $color-primary-2;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    text-decoration: none;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 0;
+
+    font-size: 0.96vw;
+    font-weight: 600;
+  
+    border-top: 2px solid $color-primary-2;
+    border-left: 2px solid $color-primary-2;
+    border-bottom: 2px solid $color-primary-2;
+
+    @include respond(-medium) {
+      width: 3.5vw;
+      height: 10.7vw;
+      font-size: 1.2vw;
+    }
+
+    @include respond(-small) {
+      display: none;
+    }
+  
+    & svg {
+      fill: $color-primary-2;
+      width: 2vw;
+      height: 2vw;
+    }
+  }
+}

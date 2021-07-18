@@ -1,0 +1,30 @@
+.aboutskill {
+  &__container {
+    display: grid;
+    grid-template-columns: 32vw 25vw;
+    justify-content: space-between;
+    margin: 9vw 7vw 0rem 7vw;
+
+    @include respond(-medium) {
+      margin: 9vw 4vw 0rem 4vw;
+      grid-template-columns: 35.5vw 28.5vw;
+    }
+
+    @include respond(-small) {
+      margin: 9vw 0 0 0;
+      grid-template-columns: 48vw 32vw;
+    }
+
+    @include respond(-smaller) {
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+      grid-row-gap: 10vw;
+    }
+
+    @include respond(-smallest) {
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+      grid-row-gap: 13.5vw;
+    }
+  }
+}

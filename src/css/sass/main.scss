@@ -1,12 +1,27 @@
 // font
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@import "abstracts/varaibles";
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "components/marquee.scss";
+@import "components/cursors";
+
 @import "pages/base";
+@import "pages/app";
+
 @import "pages/navbar";
 @import "pages/intro";
+
+@import "pages/aboutskill";
 @import "pages/about";
 @import "pages/skill";
+
+@import "pages/project";
+
+@import "pages/experience";
+@import "pages/education";
 @import "pages/work";
+
 @import "pages/contact";
 @import "pages/footer";

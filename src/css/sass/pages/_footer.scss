@@ -1,8 +1,46 @@
-.footer__container {
-  display: flex;
-  justify-content: space-between;
-  border-top: 2px solid $color-primary-2;
-  padding: 4rem 0;
-  font-weight: 500;
-  font-size: 1.7rem;
+.footer {
+  &__container {
+    display: flex;
+    padding: 0 11vw;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1.25vw;
+    color: $color-primary-1;
+    background-color: $color-primary-2;
+
+    @include respond(-large) {
+      padding: 0 8vw;
+      font-size: 1.5vw;
+    }
+
+    @include respond(-medium) {
+      font-size: 1.7vw;
+    }
+
+    @include respond(-small) {
+      padding: 0 5vw;
+      font-size: 2vw;
+    }
+
+    @include respond(-smaller) {
+      font-size: 2.5vw;
+    }
+
+    @include respond(-smallest) {
+      font-size: 3.5vw;
+    }
+  }
+
+  &__text {
+
+    @include respond(-smaller) {
+      display: none;
+    }
+  }
+
+  &__copy {
+
+  }
 }

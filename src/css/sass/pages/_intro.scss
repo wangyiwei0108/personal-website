@@ -1,35 +1,118 @@
 .intro {
   &__container {
     position: relative;
-    height: 90vh;
+    height: 100vh;
 
     & img {
-      width: 36rem;
+      width: 24vw;
       position: absolute;
       right: 0;
-      top: 50%;
+      top: 53%;
       transform: translateY(-50%);
       z-index: 1;
+
+      @include respond(-large) {
+        width: 26.5vw;
+      }
+
+      @include respond(-small) {
+        width: 32vw;
+      }
+
+      @include respond(-smaller) {
+        width: 34vw;
+        right: 0;
+        top: 68%;
+      }
+
+      @include respond(-smallest) {
+        width: 44vw;
+        top: 68%;
+      }
     }
   }
 
   &__text {
-    font-size: 3.2rem;
-    line-height: 0.9;
-    font-weight: 400;
-    width: 80%;
     position: absolute;
-    left: 0;
-    top: 50%;
+    left: 8%;
+    top: 44%;
     transform: translateY(-70%);
-    z-index: 50;
-  
-    & span {
-      text-decoration: underline;
-      text-decoration-color: $color-secondary-1;
-      text-underline-offset: -0.4rem;
-      text-decoration-thickness: 1rem;
+    z-index: 100;
+
+    @include respond(-large) {
+      top: 48%;
+    }
+
+    @include respond(-medium) {
+      top: 52%;
+      left: 0;
+    }
+
+    @include respond(-smaller) {
+      top: 35%;
+    }
+
+    @include respond(-smallest) {
+      top: 30%;
+    }
+
+    & h1 {
+      font-size: 3.2vw;
+      line-height: 1.6;
+      letter-spacing: 0.15vw;
+
+      @include respond(-large) {
+        font-size: 3.7vw;
+        letter-spacing: 0.2vw;
+      }
+
+      @include respond(-medium) {
+        font-size: 3.8vw;
+        letter-spacing: 0.3vw;
+      }
+
+      @include respond(-small) {
+        font-size: 4.4vw;
+      }
+
+      @include respond(-smaller) {
+        font-size: 5vw;
+      }
+
+      @include respond(-smallest) {
+        font-size: 5.3vw;
+      }
+    }
+  }
+
+  &__line {
+    width: 10.3vw;
+    height: 1vw;
+    background-color: $color-secondary-1;
+    position: absolute;
+    top: 34%;
+    left: 45%;
+    z-index: -1;
+
+    @include respond(-large) {
+      width: 11.7vw;
+    }
+
+    @include respond(-medium) {
+      width: 12vw;
+    }
+
+    @include respond(-small) {
+      width: 14.2vw;
+    }
+
+    @include respond(-smaller) {
+      width: 16vw;
+      height: 1.2vw;
+    }
+
+    @include respond(-smallest) {
+      width: 17.2vw;
     }
   }
 }
-

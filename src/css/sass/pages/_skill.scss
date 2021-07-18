@@ -1,61 +1,92 @@
 .skill {
   &__container {
     display: grid;
-    grid-template-columns: 20rem auto;
-    margin-top: 10rem;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
   }
 
   &__header {
-    line-height: 1.7;
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-    font-size: 3rem;
-    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.3vw;
+    text-transform: uppercase;
+    margin-bottom: 2.8vw;
 
-    & h4 {
-      border: 4px solid $color-primary-2;
+    @include respond(-smallest) {
+      margin-bottom: 4vw;
+    }
+  }
+
+  &__collections {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-column-gap: 1vw;
+
+    @include respond(-smaller) {
+      grid-template-columns: 50vw 30vw;
+      grid-column-gap: 0;
+      justify-content: space-between;
     }
   }
 
   &__collection {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    line-height: 1.4;
+    flex-direction: column;
+  }
 
-    & h4 {
-      line-height: 2.8;
+  &__text-1 {
+    font-size: 1.4vw;
+    margin-bottom: 1.1vw;
+    font-weight: 500;
+    line-height: 1.6;
+    color: $color-primary-1;
+
+    @include respond(-large) {
+      font-size: 1.45vw;
     }
 
-    & li {
-      list-style: none;
+    @include respond(-medium) {
+      font-size: 1.65vw;
+    }
+
+    @include respond(-small) {
+      font-size: 1.9vw;
+    }
+
+    @include respond(-smaller) {
+      font-size: 2.4vw;
+    }
+
+    @include respond(-smallest) {
+      font-size: 3.4vw;
+    }
+  }
+
+  &__text-2 {
+    font-size: 1.2vw;
+    letter-spacing: 0.05vw;
+    list-style: none;
+    line-height: 1.6;
+    color: $color-primary-4;
+
+    @include respond(-large) {
+      font-size: 1.25vw;
+    }
+
+    @include respond(-medium) {
+      font-size: 1.45vw;
+    }
+
+    @include respond(-small) {
+      font-size: 1.7vw;
+    }
+
+    @include respond(-smaller) {
+      font-size: 2.2vw;
+    }
+
+    @include respond(-smallest) {
+      font-size: 3.2vw;
     }
   }
 }
-
-// .circle {
-//   padding: 5%;
-//   margin: 0 -15px;
-//   mix-blend-mode: multiply;
-//   display: flex;
-//   flex-direction: column;
-// }
-
-// .circle-1 {
-//   width: 29rem;
-//   height: 25rem;
-//   background: $color-secondary-1;
-//   border-radius: 50% 50% 50% 70%/50% 50% 70% 50%;
-// }
-// .circle-2 {
-//   width: 28rem;
-//   height: 25rem;
-//   background: $color-tertiary-1;
-//   border-radius: 80% 45% 50% 50%/50%;
-// }
-// .circle-3 {
-//   width: 29rem;
-//   height: 22rem;
-//   background: $color-primary-2;
-//   border-radius: 40% 40% 50% 40%/30% 50% 50% 50%;
-// }

@@ -1,7 +1,179 @@
-.contact__container {
-  margin: 6rem 0;
+.contact {
+  &__container {
+    background-color: $color-primary-2;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10vh 69vh;
+    align-items: flex-end;
+    margin-top: 12rem;
 
-  & h1 {
-    margin: 1rem 0;
+    padding: 0 11vw 0 11vw;
+
+    @include respond(-large) {
+      padding: 0 8vw 0 8vw;
+    }
+
+    @include respond(-small) {
+      padding: 0 5vw 0 5vw;
+    }
+  }
+
+  &__arrow {
+    text-align: center;
+    font-size: 2.5vw;
+    font-weight: 400;
+    color: $color-primary-1;
+    align-self: flex-start;
+    margin-top: 2vw;
+  
+    @include respond(-large) {
+      font-size: 2.55vw;
+    }
+  
+    @include respond(-medium) {
+      font-size: 2.75vw;
+    }
+  
+    @include respond(-small) {
+      font-size: 3vw;
+    }
+  
+    @include respond(-smaller) {
+      font-size: 3.5vw;
+    }
+  
+    @include respond(-smallest) {
+      font-size: 4.5vw;
+    }
+  }
+  
+  &__content {
+    border-bottom: 2px solid $color-primary-1;
+
+    & h5 {
+      font-size: 1.5vw;
+      margin-bottom: 1.8vw;
+      letter-spacing: 0.1vw;
+      font-weight: 400;
+      color: $color-primary-1;
+
+      @include respond(-large) {
+        font-size: 1.55vw;
+      }
+
+      @include respond(-medium) {
+        font-size: 1.75vw;
+      }
+
+      @include respond(-small) {
+        font-size: 2vw;
+      }
+
+      @include respond(-smaller) {
+        font-size: 2.5vw;
+      }
+
+      @include respond(-smallest) {
+        font-size: 3.5vw;
+      }
+    }
+
+    & p {
+      font-size: 1.2vw;
+      letter-spacing: 0.05vw;
+      color: $color-primary-4;
+      line-height: 1.7;
+
+      @include respond(-large) {
+        font-size: 1.25vw;
+      }
+
+      @include respond(-medium) {
+        font-size: 1.45vw;
+      }
+
+      @include respond(-small) {
+        font-size: 1.7vw;
+        line-height: 1.8;
+      }
+
+      @include respond(-smaller) {
+        font-size: 2.2vw;
+      }
+
+      @include respond(-smallest) {
+        font-size: 3.2vw;
+        line-height: 1.9;
+      }
+    }
+  }
+
+  &__btn {
+    width: 6.1vw;
+    height: 1.8vw;
+    margin: 1.5vw 0 2.4vw 0;
+    background-color: $color-primary-1;
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.1vw;
+
+    @include respond(-large) {
+      width: 6.5vw;
+      height: 2vw;
+    }
+
+    @include respond(-medium) {
+      width: 8vw;
+      height: 2.5vw;
+      padding-bottom: 0.05vw;
+    }
+
+    @include respond(-small) {
+      width: 9vw;
+      height: 3vw;
+      padding-bottom: 0.1vw;
+    }
+
+    @include respond(-smaller) {
+      width: 12vw;
+      height: 3.5vw;
+      padding-bottom: 0.2vw;
+    }
+
+    @include respond(-smallest) {
+      width: 17.6vw;
+      height: 6vw;
+      padding-bottom: 0.3vw;
+    }
+  
+    & a {
+      text-decoration: none;
+      font-size: 1.1vw;
+      letter-spacing: 0.05vw;
+      color: $color-primary-2;
+      font-weight: 500;
+
+      @include respond(-large) {
+        font-size: 1.2vw;
+      }
+
+      @include respond(-medium) {
+        font-size: 1.3vw;
+      }
+
+      @include respond(-small) {
+        font-size: 1.5vw;
+      }
+
+      @include respond(-smaller) {
+        font-size: 1.9vw;
+      }
+
+      @include respond(-smallest) {
+        font-size: 3.2vw;
+      }
+    }
   }
 }

@@ -1,0 +1,47 @@
+.experience {
+  &__container {
+    display: grid;
+    grid-template-columns: 32vw 25vw;
+    grid-template-rows: auto;
+    justify-content: space-between;
+    margin: 9vw 7vw 0 7vw;
+
+    @include respond(-medium) {
+      margin: 9vw 4vw 9vw 4vw;
+      grid-template-columns: 35.5vw 28.5vw;
+    }
+
+    @include respond(-small) {
+      margin: 9vw 0 9vw 0;
+      grid-template-columns: 48vw 32vw;
+    }
+
+    @include respond(-smaller) {
+      grid-template-columns: 50vw 30vw;
+      margin: 10vw 0 10vw 0;
+    }
+
+    @include respond(-smallest) {
+      grid-template-columns: 100%;
+      grid-template-rows: auto auto auto;
+      justify-content: flex-start;
+      margin: 13.5vw 0 0 0;
+      grid-row-gap: 13.5vw;
+
+    }
+  }
+
+  &__work {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  &__eduction {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+
+    @include respond(-smallest) {
+      grid-column: 1 / 2;
+    }
+  }
+}

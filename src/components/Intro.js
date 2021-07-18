@@ -4,9 +4,10 @@ const Intro = () => {
   return(
     <div className="intro__container">
       <div className="intro__text">
-        <h1>「&nbsp;你好，我是<span>王奕崴</span>。</h1><br/>
-        <h1>&nbsp;&nbsp;&nbsp;&nbsp;曾任設計雜誌編輯，喜歡上寫程式。</h1><br/>
-        <h1>&nbsp;&nbsp;&nbsp;&nbsp;目標是成為<span>前端工程師</span>。」</h1>
+        <h1>
+          你好！我是王奕崴<br/>往下滑，認識我多一點。
+          <div className="intro__line"></div>
+        </h1>
       </div>
       <img alt="cool" src="images/portrait.jpg"/>
     </div>

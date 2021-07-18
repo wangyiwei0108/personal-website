@@ -1,4 +1,4 @@
-.work {
+.education {
   &__header {
     font-size: 1rem;
     letter-spacing: 0.3vw;
@@ -9,19 +9,30 @@
   &__info {
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    list-style: none;
     grid-column-gap: 1.4vw;
-    grid-row-gap: 2.8vw;
+    list-style: none;
+
+    @include respond(-large) {
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+      grid-row-gap: 2.8vw;
+    }
 
     @include respond(-smallest) {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-      grid-row-gap: 5.5vw;
+      grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
     }
 
     & li {
       line-height: 1.6;
+      
+      &:not(:last-child) {
+        margin-right: 3.5vw;
+
+        @include respond(-smallest) {
+          margin-right: 0;
+        }
+      }
     }
   }
 
@@ -53,7 +64,7 @@
     }
   }
 
-  &__job {
+  &__major {
     font-size: 1.5vw;
     letter-spacing: 0.1vw;
     font-weight: 400;
@@ -82,8 +93,7 @@
     }
   }
 
-  &__company {
-    margin-left: -0.6vw;
+  &__school {
     font-size: 1.2vw;
     letter-spacing: 0.05vw;
     color: $color-primary-3;
@@ -94,26 +104,18 @@
 
     @include respond(-medium) {
       font-size: 1.45vw;
-      margin-left: -0.65vw;
     }
 
     @include respond(-small) {
       font-size: 1.7vw;
-      margin-left: -0.7vw;
     }
 
     @include respond(-smaller) {
       font-size: 2.2vw;
-      margin-left: -1vw;
     }
 
     @include respond(-smallest) {
       font-size: 3.2vw;
-      margin-left: -1.5vw;
-    }
-
-    & span {
-      letter-spacing: 0;
     }
   }
 }
