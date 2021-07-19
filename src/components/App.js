@@ -64,7 +64,7 @@ const App = () => {
   }, [])
 
   return(
-    <div id="top">
+    <div id="home">
       <section><Navbar/></section>
       <svg className="app__smile-icon">
         <use xlinkHref="images/sprite.svg#icon-smile"></use>

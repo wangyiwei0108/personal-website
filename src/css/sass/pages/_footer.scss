@@ -35,6 +35,10 @@
 
   &__text {
 
+    & i {
+      font-size: 0.9vw;
+    }
+
     @include respond(-smaller) {
       display: none;
     }
