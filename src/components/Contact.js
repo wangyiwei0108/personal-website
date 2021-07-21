@@ -4,7 +4,7 @@ const Contact = () => {
   return(
     <div className="contact__container" id="contact">
       <div className="contact__arrow">
-        <i class="fas fa-caret-down"></i>
+        <i className="fas fa-caret-down"></i>
       </div>
       <div className="contact__content">
         <h5>與我聯繫</h5>
