@@ -4,6 +4,10 @@
     letter-spacing: 0.3vw;
     text-transform: uppercase;
     margin-bottom: 2.8vw;
+
+    @include respond(-smallest) {
+      margin-bottom: 5vw;
+    }
   }
 
   &__info {

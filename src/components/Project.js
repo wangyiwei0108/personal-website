@@ -1,8 +1,8 @@
 import React from 'react';
-import aqi from '../assets/air02.png';
-import todo from '../assets/todo01.png';
-import shopping from '../assets/cart01.png';
-import restaurant from '../assets/res01.png';
+import aqi from '../assets/project-aqi.png';
+import todo from '../assets/project-todo.png';
+import shopping from '../assets/project-cart.png';
+import restaurant from '../assets/project-res.png';
 
 const Project = () => {
   return(
