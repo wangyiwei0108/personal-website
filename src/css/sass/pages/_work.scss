@@ -49,7 +49,11 @@
 
     @include respond(-smallest) {
       font-size: 3.2vw;
-      margin-bottom: 1.5vw;
+      margin-bottom: 3vw;
+    }
+
+    @include respond(-mini) {
+      font-size: 4.2vw;
     }
   }
 
@@ -79,6 +83,10 @@
     @include respond(-smallest) {
       font-size: 3.5vw;
       margin-bottom: 1vw;
+    }
+
+    @include respond(-mini) {
+      font-size: 4.5vw;
     }
   }
 
@@ -110,6 +118,10 @@
     @include respond(-smallest) {
       font-size: 3.2vw;
       margin-left: -1.5vw;
+    }
+
+    @include respond(-mini) {
+      font-size: 4.2vw;
     }
 
     & span {

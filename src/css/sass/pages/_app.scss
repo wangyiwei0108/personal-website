@@ -1,28 +1,28 @@
 .app {
   &__smile-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    left: 2vw;
+    left: 4vw;
     top: 85vh;
-    width: 4.2vw;
-    height: 4.2vw;
-    fill: $color-primary-1;
     animation: spin 6s linear infinite;
 
     @include respond(-large) {
-      width: 4.3vw;
-      height: 4.3vw;
+      left: 2.5vw;
     }
 
     @include respond(-medium) {
-      width: 5vw;
-      height: 5vw;
+      left: 4vw;
     }
 
     @include respond(-small) {
-      width: 6vw;
-      height: 6vw;
-      top: 87vh;
-      left: 4vw;
+      left: 5vw;
+      top: 88vh;
+    }
+
+    @include respond(-smaller) {
+      top: 89vh;
     }
 
     @include respond(-smallest) {
@@ -32,6 +32,30 @@
     @keyframes spin {
       100%{
         transform:rotate(360deg);
+      }
+    }
+
+    & i {
+      font-size: 4vw;
+
+      @include respond(-large) {
+        font-size: 5vw;
+      }
+
+      @include respond(-medium) {
+        font-size: 5.6vw;
+      }
+
+      @include respond(-small) {
+        font-size: 6.2vw;
+      }
+
+      @include respond(-smaller) {
+        font-size: 7.3vw;
+      }
+
+      @include respond(-smallest) {
+        font-size: 8vw;
       }
     }
   }
@@ -85,10 +109,8 @@
       display: none;
     }
   
-    & svg {
-      fill: $color-primary-2;
-      width: 2vw;
-      height: 2vw;
+    & i {
+      font-size: 2vw;
     }
   }
 }

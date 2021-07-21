@@ -130,27 +130,26 @@ body {
   margin-top: -12rem; }
 
 .app__smile-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  left: 2vw;
+  left: 4vw;
   top: 85vh;
-  width: 4.2vw;
-  height: 4.2vw;
-  fill: #212325;
   animation: spin 6s linear infinite; }
   @media only screen and (max-width: 75em) {
     .app__smile-icon {
-      width: 4.3vw;
-      height: 4.3vw; } }
+      left: 2.5vw; } }
   @media only screen and (max-width: 62.5em) {
     .app__smile-icon {
-      width: 5vw;
-      height: 5vw; } }
+      left: 4vw; } }
   @media only screen and (max-width: 53.125em) {
     .app__smile-icon {
-      width: 6vw;
-      height: 6vw;
-      top: 87vh;
-      left: 4vw; } }
+      left: 5vw;
+      top: 88vh; } }
+  @media only screen and (max-width: 43.75em) {
+    .app__smile-icon {
+      top: 89vh; } }
   @media only screen and (max-width: 34.375em) {
     .app__smile-icon {
       display: none; } }
@@ -158,6 +157,23 @@ body {
 @keyframes spin {
   100% {
     transform: rotate(360deg); } }
+  .app__smile-icon i {
+    font-size: 4vw; }
+    @media only screen and (max-width: 75em) {
+      .app__smile-icon i {
+        font-size: 5vw; } }
+    @media only screen and (max-width: 62.5em) {
+      .app__smile-icon i {
+        font-size: 5.6vw; } }
+    @media only screen and (max-width: 53.125em) {
+      .app__smile-icon i {
+        font-size: 6.2vw; } }
+    @media only screen and (max-width: 43.75em) {
+      .app__smile-icon i {
+        font-size: 7.3vw; } }
+    @media only screen and (max-width: 34.375em) {
+      .app__smile-icon i {
+        font-size: 8vw; } }
 
 .app__container {
   display: flex;
@@ -199,10 +215,8 @@ body {
   @media only screen and (max-width: 53.125em) {
     .app__btn {
       display: none; } }
-  .app__btn svg {
-    fill: #f0f0f0;
-    width: 2vw;
-    height: 2vw; }
+  .app__btn i {
+    font-size: 2vw; }
 
 .navbar__container {
   display: grid;
@@ -236,10 +250,13 @@ body {
       font-size: 2.3vw; } }
   @media only screen and (max-width: 34.375em) {
     .navbar__container {
-      font-size: 3.5vw;
+      font-size: 4.5vw;
       padding: 0;
       grid-template-columns: 1fr;
       grid-template-rows: 12.5vh 100vh; } }
+  @media only screen and (max-width: 25em) {
+    .navbar__container {
+      font-size: 5.2vw; } }
   .navbar__container a {
     text-decoration: none;
     color: #212325; }
@@ -305,8 +322,12 @@ body {
         top: 68%; } }
     @media only screen and (max-width: 34.375em) {
       .intro__container img {
-        width: 44vw;
-        top: 68%; } }
+        width: 58vw;
+        top: 69%; } }
+    @media only screen and (max-width: 25em) {
+      .intro__container img {
+        width: 72vw;
+        top: 72%; } }
 
 .intro__text {
   position: absolute;
@@ -326,7 +347,7 @@ body {
       top: 35%; } }
   @media only screen and (max-width: 34.375em) {
     .intro__text {
-      top: 30%; } }
+      top: 28%; } }
   .intro__text h1 {
     font-size: 3.2vw;
     line-height: 1.6;
@@ -347,7 +368,10 @@ body {
         font-size: 5vw; } }
     @media only screen and (max-width: 34.375em) {
       .intro__text h1 {
-        font-size: 5.3vw; } }
+        font-size: 6.5vw; } }
+    @media only screen and (max-width: 25em) {
+      .intro__text h1 {
+        font-size: 7.6vw; } }
 
 .intro__line {
   width: 10.3vw;
@@ -372,7 +396,14 @@ body {
       height: 1.2vw; } }
   @media only screen and (max-width: 34.375em) {
     .intro__line {
-      width: 17.2vw; } }
+      width: 20.8vw;
+      height: 1.4vw;
+      top: 35%; } }
+  @media only screen and (max-width: 25em) {
+    .intro__line {
+      width: 24.2vw;
+      height: 1.4vw;
+      top: 35%; } }
 
 .aboutskill__container {
   display: grid;
@@ -436,7 +467,11 @@ body {
       font-size: 2.5vw; } }
   @media only screen and (max-width: 34.375em) {
     .about__text-1 {
-      font-size: 3.5vw; } }
+      font-size: 3.5vw;
+      margin-bottom: 3vw; } }
+  @media only screen and (max-width: 25em) {
+    .about__text-1 {
+      font-size: 4.5vw; } }
 
 .about__text-2 {
   font-size: 1.2vw;
@@ -458,6 +493,9 @@ body {
   @media only screen and (max-width: 34.375em) {
     .about__text-2 {
       font-size: 3.2vw; } }
+  @media only screen and (max-width: 25em) {
+    .about__text-2 {
+      font-size: 4.2vw; } }
   .about__text-2:not(:last-child) {
     margin-bottom: 1.2vw; }
 
@@ -510,7 +548,11 @@ body {
       font-size: 2.4vw; } }
   @media only screen and (max-width: 34.375em) {
     .skill__text-1 {
-      font-size: 3.4vw; } }
+      font-size: 3.4vw;
+      margin-bottom: 1.8vw; } }
+  @media only screen and (max-width: 25em) {
+    .skill__text-1 {
+      font-size: 4.4vw; } }
 
 .skill__text-2 {
   font-size: 1.2vw;
@@ -533,6 +575,9 @@ body {
   @media only screen and (max-width: 34.375em) {
     .skill__text-2 {
       font-size: 3.2vw; } }
+  @media only screen and (max-width: 25em) {
+    .skill__text-2 {
+      font-size: 4.2vw; } }
 
 .project__container {
   display: flex;
@@ -603,9 +648,7 @@ body {
         margin-bottom: 12vw; } }
 
 .project__pic {
-  width: 25vw;
-  height: auto;
-  background-color: white;
+  width: 100%;
   align-self: center;
   justify-self: flex-end; }
   @media only screen and (max-width: 62.5em) {
@@ -626,7 +669,6 @@ body {
     object-fit: cover;
     object-position: center; }
     .project__pic img:hover {
-      opacity: 0.7;
       cursor: pointer; }
 
 .project__intro {
@@ -663,6 +705,9 @@ body {
     @media only screen and (max-width: 34.375em) {
       .project__intro h5 {
         font-size: 3.5vw; } }
+    @media only screen and (max-width: 25em) {
+      .project__intro h5 {
+        font-size: 4.5vw; } }
     .project__intro h5 span {
       letter-spacing: 0; }
   .project__intro ul {
@@ -694,6 +739,9 @@ body {
       .project__intro li {
         font-size: 3.2vw;
         line-height: 1.9; } }
+    @media only screen and (max-width: 25em) {
+      .project__intro li {
+        font-size: 4.2vw; } }
 
 .project__btns {
   grid-column: 1 / 3;
@@ -718,6 +766,9 @@ body {
     @media only screen and (max-width: 43.75em) {
       .project__btns div {
         padding: 0.1vw 1.4vw; } }
+    @media only screen and (max-width: 34.375em) {
+      .project__btns div {
+        padding: 0.5vw 1.8vw; } }
     .project__btns div:hover {
       border: 2px solid #f0f0f0;
       background-color: #212325;
@@ -742,6 +793,9 @@ body {
     @media only screen and (max-width: 34.375em) {
       .project__btns a {
         font-size: 2.8vw; } }
+    @media only screen and (max-width: 25em) {
+      .project__btns a {
+        font-size: 3.8vw; } }
     .project__btns a:not(:last-child) {
       margin-right: 1vw; }
       @media only screen and (max-width: 53.125em) {
@@ -839,7 +893,11 @@ body {
   @media only screen and (max-width: 34.375em) {
     .education__date {
       font-size: 3.2vw;
-      margin-bottom: 1.5vw; } }
+      margin-bottom: 1.5vw;
+      margin-bottom: 3vw; } }
+  @media only screen and (max-width: 25em) {
+    .education__date {
+      font-size: 4.2vw; } }
 
 .education__major {
   font-size: 1.5vw;
@@ -863,6 +921,9 @@ body {
     .education__major {
       font-size: 3.5vw;
       margin-bottom: 1vw; } }
+  @media only screen and (max-width: 25em) {
+    .education__major {
+      font-size: 4.5vw; } }
 
 .education__school {
   font-size: 1.2vw;
@@ -883,6 +944,9 @@ body {
   @media only screen and (max-width: 34.375em) {
     .education__school {
       font-size: 3.2vw; } }
+  @media only screen and (max-width: 25em) {
+    .education__school {
+      font-size: 4.2vw; } }
 
 .work__header {
   font-size: 1rem;
@@ -925,7 +989,10 @@ body {
   @media only screen and (max-width: 34.375em) {
     .work__date {
       font-size: 3.2vw;
-      margin-bottom: 1.5vw; } }
+      margin-bottom: 3vw; } }
+  @media only screen and (max-width: 25em) {
+    .work__date {
+      font-size: 4.2vw; } }
 
 .work__job {
   font-size: 1.5vw;
@@ -949,6 +1016,9 @@ body {
     .work__job {
       font-size: 3.5vw;
       margin-bottom: 1vw; } }
+  @media only screen and (max-width: 25em) {
+    .work__job {
+      font-size: 4.5vw; } }
 
 .work__company {
   margin-left: -0.6vw;
@@ -974,6 +1044,9 @@ body {
     .work__company {
       font-size: 3.2vw;
       margin-left: -1.5vw; } }
+  @media only screen and (max-width: 25em) {
+    .work__company {
+      font-size: 4.2vw; } }
   .work__company span {
     letter-spacing: 0; }
 
@@ -1009,10 +1082,13 @@ body {
       font-size: 3vw; } }
   @media only screen and (max-width: 43.75em) {
     .contact__arrow {
-      font-size: 3.5vw; } }
+      font-size: 5vw; } }
   @media only screen and (max-width: 34.375em) {
     .contact__arrow {
-      font-size: 4.5vw; } }
+      font-size: 6.6vw; } }
+  @media only screen and (max-width: 25em) {
+    .contact__arrow {
+      font-size: 8vw; } }
 
 .contact__content {
   border-bottom: 2px solid #212325; }
@@ -1036,7 +1112,11 @@ body {
         font-size: 2.5vw; } }
     @media only screen and (max-width: 34.375em) {
       .contact__content h5 {
-        font-size: 3.5vw; } }
+        font-size: 3.5vw;
+        margin-bottom: 3vw; } }
+    @media only screen and (max-width: 25em) {
+      .contact__content h5 {
+        font-size: 4.5vw; } }
   .contact__content p {
     font-size: 1.2vw;
     letter-spacing: 0.05vw;
@@ -1059,6 +1139,9 @@ body {
       .contact__content p {
         font-size: 3.2vw;
         line-height: 1.9; } }
+    @media only screen and (max-width: 25em) {
+      .contact__content p {
+        font-size: 4.2vw; } }
 
 .contact__btn {
   width: 6.1vw;
@@ -1088,12 +1171,20 @@ body {
     .contact__btn {
       width: 12vw;
       height: 3.5vw;
-      padding-bottom: 0.2vw; } }
+      padding-bottom: 0.2vw;
+      margin-bottom: 4.5vw; } }
   @media only screen and (max-width: 34.375em) {
     .contact__btn {
       width: 17.6vw;
       height: 6vw;
-      padding-bottom: 0.3vw; } }
+      padding-bottom: 0.3vw;
+      margin-bottom: 5.5vw;
+      margin-top: 3vw; } }
+  @media only screen and (max-width: 25em) {
+    .contact__btn {
+      width: 23vw;
+      height: 7.4vw;
+      margin-bottom: 8.4vw; } }
   .contact__btn a {
     text-decoration: none;
     font-size: 1.1vw;
@@ -1115,6 +1206,9 @@ body {
     @media only screen and (max-width: 34.375em) {
       .contact__btn a {
         font-size: 3.2vw; } }
+    @media only screen and (max-width: 25em) {
+      .contact__btn a {
+        font-size: 4.2vw; } }
 
 .footer__container {
   display: flex;
@@ -1143,6 +1237,9 @@ body {
   @media only screen and (max-width: 34.375em) {
     .footer__container {
       font-size: 3.5vw; } }
+  @media only screen and (max-width: 25em) {
+    .footer__container {
+      font-size: 4.5vw; } }
 
 .footer__text i {
   font-size: 0.9vw; }

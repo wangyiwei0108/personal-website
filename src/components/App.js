@@ -66,9 +66,9 @@ const App = () => {
   return(
     <div id="home">
       <section><Navbar/></section>
-      <svg className="app__smile-icon">
-        <use xlinkHref="images/sprite.svg#icon-smile"></use>
-      </svg>
+      <div className="app__smile-icon">
+        <i className="far fa-smile"></i>
+      </div>
       <div className="app__container">
         <section><Intro/></section>
         <section><AboutSkill/></section>
@@ -78,9 +78,7 @@ const App = () => {
       <section><Contact/></section>
       <section><Footer/></section>
       <a className="app__btn" href="https://github.com/wangyiwei0108" target="_blank" rel="noreferrer">
-          <svg>
-            <use xlinkHref="images/sprite.svg#icon-github"></use>
-          </svg>
+        <i className="fab fa-github"></i>
         <div>Github</div>
       </a>
       <div className="cursors">

@@ -35,10 +35,14 @@
     }
 
     @include respond(-smallest) {
-      font-size: 3.5vw;
+      font-size: 4.5vw;
       padding: 0;
       grid-template-columns: 1fr;
       grid-template-rows: 12.5vh 100vh;
+    }
+
+    @include respond(-mini) {
+      font-size: 5.2vw;
     }
 
     & a {

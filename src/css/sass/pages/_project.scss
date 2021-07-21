@@ -88,9 +88,7 @@
   }
 
   &__pic {
-    width: 25vw;
-    height: auto;
-    background-color: white;
+    width: 100%;
     align-self: center;
     justify-self: flex-end;
 
@@ -117,7 +115,7 @@
       object-position: center;
 
       &:hover {
-        opacity: 0.7;
+
         cursor: pointer;
       }
     }
@@ -166,6 +164,10 @@
         font-size: 3.5vw;
       }
 
+      @include respond(-mini) {
+        font-size: 4.5vw;
+      }
+
       & span {
         letter-spacing: 0;
       }
@@ -208,6 +210,10 @@
         font-size: 3.2vw;
         line-height: 1.9;
       }
+
+      @include respond(-mini) {
+        font-size: 4.2vw;
+      }
     }
   }
 
@@ -237,6 +243,10 @@
 
       @include respond(-smaller) {
         padding: 0.1vw 1.4vw;
+      }
+
+      @include respond(-smallest) {
+        padding: 0.5vw 1.8vw;
       }
 
       &:hover {
@@ -270,6 +280,10 @@
 
       @include respond(-smallest) {
         font-size: 2.8vw;
+      }
+
+      @include respond(-mini) {
+        font-size: 3.8vw;
       }
 
       &:not(:last-child) {

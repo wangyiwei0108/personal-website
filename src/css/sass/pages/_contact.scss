@@ -38,11 +38,15 @@
     }
   
     @include respond(-smaller) {
-      font-size: 3.5vw;
+      font-size: 5vw;
     }
   
     @include respond(-smallest) {
-      font-size: 4.5vw;
+      font-size: 6.6vw;
+    }
+
+    @include respond(-mini) {
+      font-size: 8vw;
     }
   }
   
@@ -74,6 +78,11 @@
 
       @include respond(-smallest) {
         font-size: 3.5vw;
+        margin-bottom: 3vw;
+      }
+
+      @include respond(-mini) {
+        font-size: 4.5vw;
       }
     }
 
@@ -103,6 +112,10 @@
       @include respond(-smallest) {
         font-size: 3.2vw;
         line-height: 1.9;
+      }
+
+      @include respond(-mini) {
+        font-size: 4.2vw;
       }
     }
   }
@@ -139,12 +152,21 @@
       width: 12vw;
       height: 3.5vw;
       padding-bottom: 0.2vw;
+      margin-bottom: 4.5vw;
     }
 
     @include respond(-smallest) {
       width: 17.6vw;
       height: 6vw;
       padding-bottom: 0.3vw;
+      margin-bottom: 5.5vw;
+      margin-top: 3vw;
+    }
+
+    @include respond(-mini) {
+      width: 23vw;
+      height: 7.4vw;
+      margin-bottom: 8.4vw;
     }
   
     & a {
@@ -172,6 +194,10 @@
 
       @include respond(-smallest) {
         font-size: 3.2vw;
+      }
+
+      @include respond(-mini) {
+        font-size: 4.2vw;
       }
     }
   }

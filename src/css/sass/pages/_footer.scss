@@ -31,6 +31,10 @@
     @include respond(-smallest) {
       font-size: 3.5vw;
     }
+
+    @include respond(-mini) {
+      font-size: 4.5vw;
+    }
   }
 
   &__text {

@@ -46,6 +46,11 @@
 
     @include respond(-smallest) {
       font-size: 3.5vw;
+      margin-bottom: 3vw;
+    }
+
+    @include respond(-mini) {
+      font-size: 4.5vw;
     }
   }
 
@@ -73,6 +78,10 @@
 
     @include respond(-smallest) {
       font-size: 3.2vw;
+    }
+
+    @include respond(-mini) {
+      font-size: 4.2vw;
     }
 
     &:not(:last-child) {

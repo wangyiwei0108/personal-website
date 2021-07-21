@@ -1,4 +1,8 @@
 import React from 'react';
+import aqi from '../assets/air02.png';
+import todo from '../assets/todo01.png';
+import shopping from '../assets/cart01.png';
+import restaurant from '../assets/res01.png';
 
 const Project = () => {
   return(
@@ -26,7 +30,7 @@ const Project = () => {
           </div>
           <div className="project__pic">
             <a href="https://wangyiwei0108.github.io/react-aqi-search/" target="_blank" rel="noreferrer">
-              <img alt="project-air" src="images/air02.png"/>
+              <img alt="project-air" src={aqi}/>
             </a >
           </div>
         </div>
@@ -47,7 +51,7 @@ const Project = () => {
           </div>
           <div className="project__pic">
             <a href="https://wangyiwei0108.github.io/react-todolist/" target="_blank" rel="noreferrer">
-              <img alt="project-air" src="images/todo02.png"/>
+              <img alt="project-air" src={todo}/>
             </a >
           </div>
         </div>
@@ -68,7 +72,7 @@ const Project = () => {
           </div>
           <div className="project__pic">
             <a href="https://react-shopping-cart-yiwei.herokuapp.com/#/" target="_blank" rel="noreferrer">
-              <img alt="project-air" src="images/cart01.png"/>
+              <img alt="project-air" src={shopping}/>
             </a >
           </div>
         </div>
@@ -87,7 +91,7 @@ const Project = () => {
           </div>
           <div className="project__pic">
             <a href="https://wangyiwei0108.github.io/react-restaurant-website/" target="_blank" rel="noreferrer">
-              <img alt="project-air" src="images/res01.png"/>
+              <img alt="project-air" src={restaurant}/>
             </a >
           </div>
         </div>

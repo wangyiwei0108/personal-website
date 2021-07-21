@@ -1,4 +1,5 @@
 import React from 'react';
+import portrait from '../assets/portrait.jpg';
 
 const Intro = () => {
   return(
@@ -9,7 +10,7 @@ const Intro = () => {
           <div className="intro__line"></div>
         </h1>
       </div>
-      <img alt="cool" src="images/portrait.jpg"/>
+      <img alt="cool" src={portrait}/>
     </div>
   )
 }
