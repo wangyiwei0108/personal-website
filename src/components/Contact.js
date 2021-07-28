@@ -11,10 +11,9 @@ const Contact = () => {
         <p>姓名｜王奕崴</p>
         <p>應徵職務｜前端工程師</p>
         <p>希望求職地點｜臺北市、新北市</p>
-        <p>手機｜0910677080</p>
         <p>E-mail｜wangyiwei0108@gmail.com</p>
         <div className="contact__btn">
-          <a href="/">
+          <a href="https://www.cakeresume.com/wangyiwei" target="_blank" rel="noreferrer">
             <div>Resume</div>
           </a>
         </div>
